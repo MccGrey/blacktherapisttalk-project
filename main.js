@@ -15,3 +15,29 @@ closeNav = () => {
 }
 
 closeNavBtn.addEventListener('click', closeNav);
+
+// swiper js testimonials
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+     //responsive breakpoints
+     breakpoints: {
+        //when window width is >= 600px
+        600: {
+            slidesPerView: 2
+        },
+        //when window witdth is >=1024
+        1024: {
+            slidesPerView: 3
+        }
+     }
+
+
+  });
+
+ 
