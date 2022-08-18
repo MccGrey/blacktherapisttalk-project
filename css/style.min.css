@@ -247,3 +247,7 @@ header .container .header__content p {
     line-height: 1.4;
   }
 }
+#services .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
