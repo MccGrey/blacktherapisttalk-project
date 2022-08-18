@@ -486,3 +486,14 @@ header .container .header__content p {
   resize: none;
   appearance: none;
 }
+
+/* ==============================media queries (small devices  =============================*/
+@media screen and (max-width: 600px) {
+  #appointment .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  #appointment .container .info h2, #appointment .container .info p {
+    text-align: center;
+  }
+}
