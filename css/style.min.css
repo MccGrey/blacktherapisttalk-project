@@ -102,8 +102,24 @@ nav {
   background: linear-gradient(135deg, #480ca8, #4cc9f0);
   color: #ffffff;
   box-shadow: 0 1rem 1rem rgba(12, 3, 27, 0.1);
+  /* navbar styles on scroll using JS*/
 }
 nav h1, nav h2 h3, nav h4, nav h5 {
+  color: #ffffff;
+}
+nav.window-scroll {
+  background: #ffffff;
+}
+nav.window-scroll .container button {
+  color: #0c031b;
+}
+nav.window-scroll .container a {
+  color: #0c031b;
+}
+nav.window-scroll .container a > h3 {
+  color: #0c031b;
+}
+nav.window-scroll .container a.btn {
   color: #ffffff;
 }
 nav .container {
@@ -131,6 +147,12 @@ nav .container .nav__logo h3 {
 
 /* ==============================media queries (medium devices  =============================*/
 @media screen and (max-width: 1024px) {
+  nav {
+    /* nabar styles on scroll using js */
+  }
+  nav.window-scroll .container a {
+    color: #ffffff;
+  }
   nav .container button {
     display: inline-block;
     background: transparent;
@@ -241,10 +263,6 @@ header .container .header__content p {
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
-  }
-  header .container .header__content {
-    margin: 0.8rem 0 1.5rem;
-    line-height: 1.4;
   }
 }
 #services .container {

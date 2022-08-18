@@ -16,6 +16,23 @@ closeNav = () => {
 
 closeNavBtn.addEventListener('click', closeNav);
 
+
+//close nav on click of a link
+if(window.innerWidth < 1024) {
+    document.querySelectorAll('#nav__items li a').forEach(navItem => {
+        navItem.addEventListener('click', () => {
+            closeNav();
+        })
+    })
+}
+
+
+
+//change navbar styles on scroll
+window.addEventListener('scroll', () => {
+    document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 0);
+})
+
 // swiper js testimonials
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
@@ -36,8 +53,6 @@ var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3
         }
      }
-
-
   });
 
  
