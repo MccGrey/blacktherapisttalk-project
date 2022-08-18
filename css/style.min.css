@@ -385,3 +385,16 @@ header .container .header__content p {
   visibility: hidden;
   transition: all 1s 400ms ease;
 }
+
+/* ==============================media queries (medium devices  =============================*/
+@media screen and (max-width: 1024px) {
+  #specialists .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* ==============================media queries (small devices  =============================*/
+@media screen and (max-width: 600px) {
+  #specialists .container {
+    grid-template-columns: 1fr;
+  }
+}

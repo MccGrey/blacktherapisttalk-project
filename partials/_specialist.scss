@@ -102,3 +102,22 @@
         }
     }
 }
+
+
+/* ==============================media queries (medium devices  =============================*/
+
+@media screen and (max-width: 1024px) {
+    #specialists {
+        .container {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+/* ==============================media queries (small devices  =============================*/
+@media screen and (max-width: 600px) {
+    #specialists {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+}
